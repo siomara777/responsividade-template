@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid black;
+    height: 400px;
+}
+
+section{
+    display: grid;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-device-width: 480px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        height: 100px;
+        color: red;
+        align-items: start;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) { 
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid black;
+
+    }
+    
+} 
+
